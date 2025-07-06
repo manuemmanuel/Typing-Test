@@ -168,7 +168,7 @@ export const useTypingStore = create<TypingState>((set, get) => ({
   },
   
   updateStats: () => {
-    const { typedText, text, startTime, errors } = get();
+    const { typedText, startTime, errors } = get();
     
     if (!startTime) return;
     

@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { useTypingStore } from '../store/typingStore';
 import { 
   AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell, 
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, 
+  XAxis, YAxis, CartesianGrid, Tooltip, 
   ResponsiveContainer, Legend
 } from 'recharts';
-import { ArrowRight, Copy, RefreshCw, Share2 } from 'lucide-react';
+import { ArrowRight, RefreshCw, Share2 } from 'lucide-react';
 
 const Results: React.FC = () => {
   const { 
@@ -15,9 +15,6 @@ const Results: React.FC = () => {
     errors, 
     cpm,
     typedText,
-    resetTest,
-    setText,
-    text,
     retryTest,
     startNewTest,
     theme
